@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
@@ -65,7 +66,7 @@
 					<div class="col-lg-12">
 						<div class="mainmenu__wrapper dflex">
 							<div class="logo">
-								<a class="logo__link" href="#"><img src="img/logo.png" alt="logo salam"></a>
+								<a class="logo__link" href="index.html"><img src="img/logo.png" alt="logo salam"></a>
 							</div>
 							<nav class="menu">
 								<ul class="menu__items">
@@ -91,7 +92,7 @@
 		</div>
 	</header>
 	<div class="main">
-		<section class="slider">
+		<section class="slider wow lightSpeedIn" data-wow-duration=".5s">
 			<div id="top__slider" class="owl-carousel top__slider">
 			    <div class="item">
 			    	<div class="bg__slider">
@@ -128,8 +129,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="plan__wrapper">
-							<div class="plan__title">Выберите пакеты START:</div>
-							<div class="plan__slider">
+							<div class="plan__title wow rotateIn">Выберите пакеты START:</div>
+							<div class="plan__slider wow lightSpeedIn" data-wow-delay="1s">
 								
 								<div id="plan__slider" class="owl-carousel">
 								    <div class="item">
@@ -176,54 +177,43 @@
 		
 		
 		<section class="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="start__wrapper dflex">
-							<div class="box">
-								<a class="start__link" href="#">
-									<img class="start__img" src="img/7day.jpg">
-								</a>
-							</div>
-							<div class="box">
-								<a class="start__link" href="#">
-									<img class="start__img" src="img/30day.jpg">
-								</a>
-							</div>
-						</div>
-					</div>
+			<div class="start__wrapper dflex">
+				<div class="box  wow fadeInLeft">
+					<a class="start__link" href="#">							<img class="start__img" src="img/7day.jpg">
+					</a>
 				</div>
-			</div>
+				<div class="box wow fadeInRight">
+					<a class="start__link" href="#">
+			 			<img class="start__img" src="img/30day.jpg">
+					</a>					
+				</div>
+			</div>					
 		</section>
-
-
-
-
 
 		<section class="advantage">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="advantage__wrapper dflex">
-							<div class="advantage__box">
+							<div class="advantage__box wow fadeInLeft">
 								<div class="icon">
 									<img src="img/icon1.png">
 								</div>
 								<div class="text">Подключить или откоючить услуги</div>
 							</div>
-							<div class="advantage__box">
+							<div class="advantage__box  wow fadeInUp">
 								<div class="icon">
 									<img src="img/icon2.png">
 								</div>
 								<div class="text">Перейти в Salam</div>
 							</div>
-							<div class="advantage__box">
+							<div class="advantage__box  wow fadeInUp">
 								<div class="icon">
 									<img src="img/icon3.png">
 								</div>
 								<div class="text">Акции</div>
 							</div>
-							<div class="advantage__box">
+							<div class="advantage__box  wow fadeInRight">
 								<div class="icon">
 									<img src="img/icon4.png">
 								</div>
@@ -240,7 +230,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="news__wrapper dflex">
-							<div class="news__box">
+							<div class="news__box wow pulse">
 								<div class="news__img">
 									<img src="img/slide1.jpg">
 								</div>
@@ -252,7 +242,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="news__box">
+							<div class="news__box  wow pulse">
 								<div class="news__img">
 									<img src="img/slide2.jpg">
 								</div>
@@ -264,7 +254,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="news__box">
+							<div class="news__box  wow pulse">
 								<div class="news__img">
 									<img src="img/slide3.jpg">
 								</div>
@@ -441,9 +431,15 @@
 
 	</div>
 
-
+	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+    	new WOW().init();
+    </script>
+
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ $('#top__slider').owlCarousel({
     animateIn: 'flipInX',
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:true
+    autoplayHoverPause:false
 })
 
 $('#plan__slider').owlCarousel({
@@ -19,4 +19,4 @@ $('#plan__slider').owlCarousel({
  window.addEventListener("scroll", function(){
             var header = document.querySelector(".mainmenu");
             header.classList.toggle("sticky", window.scrollY > 0);
-        })
+})
